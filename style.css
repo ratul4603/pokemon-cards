@@ -1,0 +1,114 @@
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+.main-container{
+    text-align: center;
+    width:380px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -40%);
+}
+.card{
+    /* background-image:radial-gradient(circle at 50% 0%, orange 36%, rgb(255, 255, 255, .0001) 36%); */
+    padding:15px;
+    border-radius:8px;
+    box-shadow: 5px 5px 35px rgb(0, 0, 0, .3);
+}
+.card #hp{
+    background-color: rgb(255, 255, 255, .7);
+    width:80px;
+    text-align: center;
+    position:relative;
+    top:5%;
+    left:75%;
+    padding:7px 10px;
+    border-radius:30px;
+    font-weight: 600;
+    color:rgb(0, 0, 0, .8);
+    font-family:cursive;
+}
+.card img{
+    width:250px;
+    height:150px;
+    margin:11px auto;
+    display:block;
+}
+.card #name{
+    text-align: center;
+    margin-bottom:10px;
+    color:rgb(79, 78, 78);
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+.card .type-box{
+    display: flex;
+    justify-content: space-around;
+    padding:10px 0;
+}
+.card span{
+    padding:3px 15px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size:14px;
+    color:white;
+}
+.power{
+    display: flex;
+    justify-content: space-around;
+    margin:20px 0 15px 0;
+    text-align:center;
+}
+.power h3{
+    padding: 7px 0;
+    color:rgb(0, 0, 0, .8);
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.power p{
+    font-size: 14px;
+    color:gray;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main-container button{
+    outline:none;
+    border:none;
+    background-color: turquoise;
+    color:black;
+    padding:8px 20px;
+    border-radius:8px;
+    font-size:1.3rem;
+    margin:40px 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-container button:hover{
+    background-color: black;
+    color:white;
+}
+
+
+
+@media screen and (max-width:578px){
+    .main-container{
+        width:280px;
+        top:30%;
+        transform: translate(-50%, -30%);
+    }
+    .card #hp{
+        left:70%;
+    }
+    .card img{
+        width:180px;
+    }
+}
